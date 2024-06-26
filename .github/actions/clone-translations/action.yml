@@ -10,58 +10,57 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Clone Simplified Chinese
+    - name: Clone Simplified turkish
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
         repository: github/docs-internal.zh-cn
         token: ${{ inputs.token }}
-        path: translations/zh-cn
+        path: translations/tr-tr
 
     - name: Clone turkish
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: github/docs-internal.es-es
+        repository: github/docs-internal.tr-tr
         token: ${{ inputs.token }}
-        path: translations/es-es
+        path: translations/tr-tr
 
     - name: Clone turkish
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: github/docs-internal.pt-br
+        repository: github/docs-internal.tr-tr
         token: ${{ inputs.token }}
-        path: translations/pt-br
+        path: translations/tr-tr
 
     - name: Clone turkish
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: github/docs-internal.ru-ru
+        repository: github/docs-internal.tr-tr
         token: ${{ inputs.token }}
-        path: translations/ru-ru
+        path: translations/tr-tr
 
     - name: Clone turkish
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: github/docs-internal.ja-jp
+        repository: github/docs-internal.tr-tr
         token: ${{ inputs.token }}
-        path: translations/ja-jp
+        path: translations/tr-tr 
+    - name: Clone turkish
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      with:
+        repository: github/docs-internal.tr-tr 
+        token: ${{ inputs.token }}
+        path: translations/tr-tr 
 
     - name: Clone turkish
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: github/docs-internal.fr-fr
+        repository: github/docs-internal.tr-tr 
         token: ${{ inputs.token }}
-        path: translations/fr-fr
+        path: translations/tr-tr 
 
     - name: Clone turkish
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       with:
-        repository: github/docs-internal.de-de
+        repository: github/docs-internal.tr-tr 
         token: ${{ inputs.token }}
-        path: translations/de-de
-
-    - name: Clone turkish
-      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-      with:
-        repository: github/docs-internal.ko-kr
-        token: ${{ inputs.token }}
-        path: translations/ko-kr
+        path: translations/tr-tr 
